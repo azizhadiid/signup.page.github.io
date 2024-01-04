@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- link icon -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://kit.fontawesome.com/3659f450a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- Navbar start -->
+        <nav>
+            <!-- Mobile -->
+            <ul class="side-bar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="nav-mobile"><a href="#">About</a></li>
+                <li class="nav-mobile"><a href="#">Blog</a></li>
+                <li class="nav-mobile"><a href="#">Product</a></li>
+                <li class="nav-mobile"><a href="#">Services</a></li>
+                <li class="nav-mobile"><a href="#">Contact Us</a></li>
+                <button class="Button-mobile">Sign Up</button>
+            </ul>
+            <!-- Desktop -->
+            <ul>
+                <li class="logo"><a href="#">Coding2go</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Blog</a></li>
+                <li class="hideOnMobile"><a href="#">Product</a></li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+                <button class="btnlogin-popup">Sign Up</button>
+                <li  class="menu-buttom" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    <!-- Navbar End -->
+    
+    <!-- input box -->
+        <div class="container">
+            <div class="form-box">
+                <div class="icon-close">
+                    <button>
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+                <h1 id="title">Sign up</h1>
+                <!-- struktur of form -->
+                <form action="">
+                    <!-- make input bar -->
+                    <div class="input-group">
+                        <!-- make user input -->
+                        <div class="input-field" id="nameField">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="name">
+                        </div>
+                        <!-- Make email input -->
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="email">
+                        </div>
+                        <!-- make password input -->
+                        <div class="input-field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="password">
+                        </div>
+                        <p>Forgot the Password <a href="">Click Here! </a></p>
+                    </div>
+                    <!-- make button -->
+                    <div class="btn-field">
+                        <!-- make button for sign up and sign in, this button to make moving in the bar input -->
+                        <button type="button" id="signUpBtn">Sign Up</button>
+                        <button type="button" class="disable" id="signInBtn">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <!-- end input nox -->
+    <script src="script.js"></script>
+</body>
+</html>
